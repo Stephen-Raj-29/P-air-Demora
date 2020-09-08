@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Airlines</title>
+    <link rel="icon" href="static/assets/img/logo.jpg" type="image">
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="static/assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="/">P'air Demora</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/air_info">Airlines&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/predict">Predict</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page projects-page">
+        <div class="container-fluid">
+            <h3 class="text-dark mb-4"></h3>
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <p class="text-primary m-0 font-weight-bold">Airlines Information</p>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive d-lg-flex justify-content-lg-center table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                        <table class="table dataTable my-0" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Airline Code</th>
+                                    <th>Airlines</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UA</td>
+                                    <td>United Air Lines Inc.<br></td>
+                                </tr>
+                                <tr>
+                                    <td>AA</td>
+                                    <td>American Airlines Inc.<br></td>
+                                </tr>
+                                <tr>
+                                    <td>US</td>
+                                    <td>US Airways Inc.<br></td>
+                                </tr>
+                                <tr>
+                                    <td>F9</td>
+                                    <td>Frontier Airlines Inc.<br></td>
+                                </tr>
+                                <tr>
+                                    <td>B6</td>
+                                    <td>JetBlue Airways<br></td>
+                                </tr>
+                                <tr>
+                                    <td>OO</td>
+                                    <td>Skywest Airlines Inc.<br></td>
+                                </tr>
+                                <tr>
+                                    <td>AS</td>
+                                    <td>Alaska Airlines Inc.<br></td>
+                                </tr>
+                                <tr>
+                                    <td>NK</td>
+                                    <td>Spirit Air Lines<br></td>
+                                </tr>
+                                <tr>
+                                    <td>WN</td>
+                                    <td>Southwest Airlines Co.<br></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Airline Code</strong></td>
+                                    <td><strong>Airlines</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h3 class="text-dark mb-4"></h3>
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <p class="text-primary m-0 font-weight-bold">Airport Info</p>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                        <table class="table dataTable my-0" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Airport</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th>Latitude</th>
+                                    <th>Longitude</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ABE</td>
+                                    <td>Lehigh Valley<br> International Airport<br></td>
+                                    <td>Allentown<br></td>
+                                    <td>PA</td>
+                                    <td>USA</td>
+                                    <td>40.65236<br></td>
+                                    <td>-75.4404<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ABI</td>
+                                    <td>Abilene Regional<br> Airport<br></td>
+                                    <td>Abilene<br></td>
+                                    <td>TX</td>
+                                    <td>USA</td>
+                                    <td>32.41132<br></td>
+                                    <td>-99.6819<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ABQ</td>
+                                    <td>Albuquerque<br> International Sunport<br></td>
+                                    <td>Albuquerque<br></td>
+                                    <td>NM</td>
+                                    <td>USA</td>
+                                    <td>35.04022<br></td>
+                                    <td>-106.609<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ABR</td>
+                                    <td>Aberdeen Regional<br> Airport<br></td>
+                                    <td>Aberdeen<br></td>
+                                    <td>SD</td>
+                                    <td>USA</td>
+                                    <td>45.44906<br></td>
+                                    <td>-98.4218<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ABY</td>
+                                    <td>Southwest Georgia<br> Regional Airport<br></td>
+                                    <td>Albany<br></td>
+                                    <td>GA<br></td>
+                                    <td>USA</td>
+                                    <td>31.53552<br></td>
+                                    <td>-84.1945<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ACK</td>
+                                    <td>Nantucket Memorial<br> Airport<br></td>
+                                    <td>Nantucket<br></td>
+                                    <td>MN</td>
+                                    <td>USA</td>
+                                    <td>41.25305<br></td>
+                                    <td>-70.0602<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ACT</td>
+                                    <td>Waco Regional Airport<br></td>
+                                    <td>Waco<br></td>
+                                    <td>TX</td>
+                                    <td>USA</td>
+                                    <td>31.61129<br></td>
+                                    <td>-97.2305<br></td>
+                                </tr>
+                                <tr>
+                                    <td>ACV</td>
+                                    <td>Arcata Airport<br></td>
+                                    <td>Arcata/Eureka<br></td>
+                                    <td>CA</td>
+                                    <td>USA</td>
+                                    <td>40.65236<br></td>
+                                    <td>-124.109<br></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Code</strong></td>
+                                    <td><strong>Airport</strong></td>
+                                    <td><strong>City</strong></td>
+                                    <td><strong>State</strong></td>
+                                    <td><strong>Country</strong></td>
+                                    <td><strong>Latitude</strong></td>
+                                    <td><strong>Longitude</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite"></p>
+                        </div>
+                        <div class="col-md-6">
+                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="portfolio-block projects-cards"></section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><div><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets5.lottiefiles.com/datafiles/7JozmEN9dibUFg4/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 100px;"  loop  autoplay >
+</lottie-player></div></div>
+            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
+        </div>
+    </footer>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/chart.min.js"></script>
+    <script src="static/assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="static/assets/js/theme.js"></script>
+</body>
+
+</html>
